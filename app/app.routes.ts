@@ -1,30 +1,15 @@
-
 import { Routes } from '@angular/router';
-import { HomecomponentComponent } from './homecomponent/homecomponent.component';
-import { ProductComponent } from './product/product.component';
-import { ContactComponent } from './contact/contact.component';
-import { SingleviewComponent } from './singleview/singleview.component';
-import { ProductviewComponent } from './productview/productview.component';
+import { HomeComponent } from './home/home.component';
+import { ProductsComponent } from './products/products.component';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 export const routes: Routes = [
-   {
-    path:"",
-    component:HomecomponentComponent
-} ,
-   {
-    path:"product",
-    component:ProductComponent
-},
-    {
-        path:"Contact",
-        component:ContactComponent
-    },
-    {
-        path:"singleview/:id",
-        component:SingleviewComponent
-    },
-    {
-        path:"productview/:id",
-        component:ProductviewComponent
-    }
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component:HomeComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  {path: 'carousel',component:CarouselComponent},
 ];

@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
+import { NavbarComponent} from './shared1/navbar/navbar.component';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './ui/navbar/navbar.component';
-import { HomecomponentComponent } from './homecomponent/homecomponent.component';
-import { CardaComponent } from './carda/carda.component';
-import { FooterComponent } from './ui/footer/footer.component';
-import { CarouselComponent } from './homecomponent/carousel/carousel.component';
+import { ProductsComponent } from './products/products.component';
+import { CartComponent } from './cart/cart.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NavbarComponent,HomecomponentComponent,CardaComponent,FooterComponent,CarouselComponent],
+  standalone: true,
+  imports: [NavbarComponent, RouterOutlet], 
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'ECART';
+  title = 'shopping-site';
 }
