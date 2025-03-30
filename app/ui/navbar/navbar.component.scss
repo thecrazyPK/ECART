@@ -1,0 +1,57 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #ffb6c1;
+    background-image: "https://images.unsplash.com/photo-1560073210-1eb8ea89d4cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"; /* Light pink background */
+  }
+  
+  .navbar-brand {
+    color: #ff69b4; /* Hot pink for the brand */
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #b93484;
+    font-size: 1rem;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    background-color: #c84888; /* Hot pink on hover/active */
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .navbar-toggler {
+    border-color: #ff69b4;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: linear-gradient(#ff69b4, #ff1493); /* Pink gradient for toggle icon */
+  }
+  
+  .dropdown-menu {
+    background-color: #ffb6c1;
+  }
+  
+  .dropdown-item {
+    color: #b22c95ec;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #ff69b4; /* Hot pink on hover */
+  }
+  
+  .navbar .form-control {
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+  }
+  
+  .navbar .btn-outline-success {
+    color: #fff;
+    border: 2px solid #ff69b4;
+  }
+  
+  .navbar .btn-outline-success:hover {
+    background-color: #ff69b4;
+    border: none;
+  }

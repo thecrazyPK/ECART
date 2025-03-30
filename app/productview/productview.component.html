@@ -1,0 +1,10 @@
+<div class="container text-center">
+    <h2>{{ product?.producttitle }}</h2>
+    <img [src]="product?.image" alt="Product Image" class="product" />
+    <h3 class="text-primary">{{ product.price }}</h3>
+    <p class="text-muted">Category: <strong>{{ product?.category }}</strong></p>
+    <p class="px-3">{{product?.description}}</p>
+
+    <button class="btn btn-success mt-3">ADD TO CART</button>
+  </div>
+  

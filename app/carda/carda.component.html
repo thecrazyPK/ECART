@@ -1,0 +1,10 @@
+    <div class="carda">
+         <a [routerLink]="['/singleview',data.id]" class="btn btn-primary">
+     <img src= {{data.image}} class="product-img"> </a>
+     <div class="carda-body">
+        <h5 class="carda-title">{{data.title}}</h5>
+      <h6 class="carda-text">${{data.price}}</h6>
+      <p class="carda-text">{{data.rating}}</p>
+      <a [routerLink]="['/singleview', data.id]" class="btn btn-primary"> ADD TO CART</a>
+      </div>
+    </div>
